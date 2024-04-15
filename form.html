@@ -6,39 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <title>Document</title>
+    <title>Odin Form</title>
 </head>
 
 <body>
-    <div class="sideimg">
-        <img src="sideimg.jpg" alt="">
-        <div class="imgcontent">
-            <img src="odin.png" alt="">
-            <h1>Odin</h1>
-        </div>
+    <div class="img-area">
+        <img src="sideimg.jpg" alt="" id="background-img">
+        <img src="odin.png" alt="" id="odin-img">
     </div>
-
     <div class="mainarea">
-        <div class="header">
-            <div>
-                <h1>Welcome to Odin Project's Form</h1>
-                <h2>Fill up with your credentials so that one day you may enter Valhalla!</h2>
-            </div>
-        </div>
         <div class="mainbody">
-            <div>
-                <h1>Your credentials</h1>
-                <form action="">
+            <form action="" method="get" id="TheForm">
 
-                </form>
-            </div>
-        </div>
-        <div class="footer">
-            <div>
-                <button class="scifi-button">Send Credentials</button>
-                <h2>Already sent credentials?
+                <h1 class="formTitle">Tell Your Sagas</h1>
+
+                <label for="fname">
+                    <input type="text" id="fname" placeholder="*First Name" required>
+                </label>
+                <label for="lname">
+                    <input type="text" id="lname" placeholder="*Last Name" required>
+                </label>
+                <label for="email">
+                    <input type="email" id="email" placeholder="*Email" required>
+                </label>
+                <label for="pnumber">
+                    <input type="text" id="pnumber" placeholder="*Phone Number" required>
+                </label>
+                <label for="password">
+                    <input type="password" minlength="8" maxlength="14" id="password" placeholder="*Password" required>
+                </label>
+                <label for="cpassword">
+                    <input type="password" minlength="8" maxlength="14" id="cpassword" placeholder="*Confirm Password"
+                        required>
+                </label>
+
+                <button type="submit">Send Credentials</button>
+
+                <h2 class="footer-info">Already sent credentials?
                     <a href="">Click here</a>
-            </div>
+                </h2>
+
+            </form>
+            <img src="Ellipse.png" class="ellipse-1">
+            <img src="Ellipse.png" class="ellipse-2">
         </div>
     </div>
 </body>
